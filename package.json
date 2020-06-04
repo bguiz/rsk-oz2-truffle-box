@@ -1,0 +1,35 @@
+{
+  "name": "rsk-oz2-truffle-box",
+  "version": "0.0.0",
+  "description": "Truffle box configured for use with the RSK network and OpenZeppelin 2.x",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bguiz/rsk-oz2-truffle-box.git"
+  },
+  "keywords": [
+    "truffle",
+    "truffle-box",
+    "rsk",
+    "open-zeppelin"
+  ],
+  "author": "bguiz",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/bguiz/rsk-oz2-truffle-box/issues"
+  },
+  "homepage": "https://github.com/bguiz/rsk-oz2-truffle-box#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "2.5.1"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "1.0.35",
+    "mnemonics": "1.1.3"
+  }
+}
