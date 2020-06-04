@@ -4,11 +4,24 @@
     ".gitignore"
   ],
   "commands": {
-    "Compile contracts": "truffle compile",
-    "Migrate contracts": "truffle migrate",
-    "Test contracts": "truffle test"
+    "Compile RSK smart contracts": "truffle compile",
+    "Deploy contracts on RSK Regtest": "truffle migrate --network regtest",
+    "Deploy contracts on RSK Testnet (public)": "truffle migrate --network testnet",
+    "Deploy contracts on RSK Testnet (localhost)": "truffle migrate --network localtestnet",
+    "Deploy contracts on RSK Mainnet (public)": "truffle migrate --network mainnet",
+    "Deploy contracts on RSK Mainnet (localhost)": "truffle migrate --network localmainnet",
+    "Test contracts on RSK RegTest": "truffle test --network regtest",
+    "Test contracts on RSK Testnet (public)": "truffle test --network testnet",
+    "Test contracts on RSK Testnet (localhost)": "truffle test --network localtestnet",
+    "Test contracts on RSK Mainnet (public)": "truffle test --network mainnet",
+    "Test contracts on RSK Mainnet (localhost)": "truffle test --network localmainnet",
+    "REPL connected to RSK RegTest": "truffle console --network regtest",
+    "REPL connected to RSK Testnet (public)": "truffle console --network testnet",
+    "REPL connected to RSK Testnet (localhost)": "truffle console --network localtestnet",
+    "REPL connected to RSK Mainnet (public)": "truffle console --network mainnet",
+    "REPL connected to RSK Mainnet (localhost)": "truffle console --network localmainnet"
   },
   "hooks": {
-    "post-unpack": ""
+    "post-unpack": "bash scripts/setup.sh"
   }
 }
